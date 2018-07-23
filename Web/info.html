@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Información</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  </head>
+  <body>
+      <header>
+      <a href="index.html"><h1>Xarxa</h1></a>
+      </header>
+      <section>
+        <h2 style="font-size:200%;">·Información, uso e instalación:</h2>
+        <p style="margin-top: -50px;"> Buenas. En esta página explico algunas cosas sobre la herramienta,
+            como instalación y uso. Si tienes algún problema, que la herramienta
+            no funcione como debería o alguna duda, no dudes en escribirme a
+            aangrymasther@gmail.com o en escribir una issue en github.</p>
+        <h3>Información sobre el proyecto</h3>
+        <p style="margin-top:-50px;">Es un proyecto creado en python 2 que tiene la intención  de juntar varias funciones para el analisis
+          de redes.A día de hoy, cuenta con dos funciones para descubrimiento de equipos, cuatro para escaneo de puertos
+          y dos ataques. Todo esto se explicará mas adelante. La herramienta es de código abierto
+          (Este se puede encontrar en github o descargar desde esta misma página) y agradecería mucho cualquier contribución
+          al código.</p>
+        <h3>instalación</h3>
+        <p style="margin-top:-50px;"><a href="descargar.html" style="color:purple">Haz click aquí</a> y descomprime el archivo. Para descomprimir
+          el archivo puedes usar "tar -xzvf xarxa.tar.gz".<br>
+          Despues tienes que instalar scapy: para eso solo tienes que abrir una terminal y poner "sudo apt install python-pip;
+          pip install scapy" Ahora el programa está a punto para funcionar.
+        </p>
+        <h3>Uso</h3>
+        <p style="margin-top:-50px;">
+          <strong>descubrimiento de equipos</strong><br><br>
+
+          <b>Ping scan:</b> necesita una dirección IP de ejemplo similar a "192.168.1.0". Envía un ping a todas las direcciones
+          IP Dentro de la mascara. Ejemplo: "python main.py -pS 192.168.1.0".<br><br>
+          <b>ARP Scan:</b> necesita una dirección IP de ejemplo similar a "192.168.1.0". Envía una petición ARP al brodcast preguntando
+          por la dirección Mac asociada cada dirección IP dentro del rango. Si regresa una dirección Mac, la IP pertenecerá a un
+          equipo dentro de la red. Ejemplo: "python main.py -pA 192.168.1.0"
+          <br><br><strong>Escaneo de puertos</strong><br><br>
+          <b>Sock Scan:</b> necesita una dirección IP. Abre una conexión completa con cada uno de los puertos. Si se logra
+          establecer conexión es porque existe un servicio corriendo en ese puerto. Ejemplo: "python main.py -sTS 192.168.1.126".<br><br>
+          <b>Sock UDP Scan:</b> necesita una dirección IP. Hace lo mismo que el de arriba pero en UDP. Ejemplo "python main.py -sUS 192.168.1.126"
+          <br><br>
+          <b>FIN Scan:</b> Necesita una dirección IP y un tiempo en segundos. No funciona en equipos que no el estandar, como windows. Envía un FIN a cada puerto
+          del objetivo. Si no hace nada el puerto está cerrado. Si envía un RST está abierto. Ejemplo "python main.py -fS 192.168.1.126 10"
+          <br><br>
+          <b>Half Syn Scan:</b> Necesita una dirección IP. Envía un SYN al objetivo, si este responde con un syn/ack
+          se le envía un RST para cerrar la conexión. ejemplo "python main.py -hsS 192.168.1.126"
+
+        </p>
+      </section>
+
+
+
+      <footer>
+        <ul>
+          <li>Licencia</li>
+          <li>Contacto</li>
+        </ul>
+      </footer>
+  </body>
+</html>
