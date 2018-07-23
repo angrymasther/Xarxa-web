@@ -5,12 +5,11 @@
   list-style: none;
 }
 header{
-  background-image: url("https://i.imgur.com/dEMoRO0.jpg");
+  background-image: url("red-de-pesca-2196352.jpg");
   height: 50px;
   color:white;
   padding-top: 10px;
   padding-left: 5px;
-  width:100%;
 }
 a{
   text-decoration: none;
@@ -49,7 +48,7 @@ p{
 #info{
   margin:10px;
   display: inline-block;
-  background-image: url("https://i.imgur.com/GadQzeQ.jpg");
+  background-image: url("fondo1.jpg");
   color:white;
   padding-right: 100px;
   height: 250px;
@@ -87,7 +86,6 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  box-sizing:border-box;
   height: 40px;
   color: white;
 }
