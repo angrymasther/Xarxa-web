@@ -4,6 +4,9 @@
   font-family: "Ubuntu";
   list-style: none;
 }
+html{
+ width:100%; 
+}
 header{
   background-image: url("red-de-pesca-2196352.jpg");
   height: 50px;
