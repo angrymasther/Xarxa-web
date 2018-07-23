@@ -10,6 +10,7 @@ header{
   color:white;
   padding-top: 10px;
   padding-left: 5px;
+  width:calc(100%);
 }
 a{
   text-decoration: none;
@@ -85,7 +86,7 @@ footer {
   background-color: black;
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: calc(100%);
   box-sizing:border-box;
   height: 40px;
   color: white;
