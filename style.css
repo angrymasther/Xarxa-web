@@ -1,0 +1,145 @@
+
+*{
+  margin:0px;
+  font-family: "Ubuntu";
+  list-style: none;
+}
+html{
+ width:100%;
+}
+header{
+  background-image: black;
+  height: 50px;
+  color:white;
+  padding-top: 10px;
+  width:100%;
+  padding-left: 5px;
+  border-bottom: 5px blue solid;
+}
+a{
+  text-decoration: none;
+  color:white;
+}
+body{
+  background-image: url("ayudasINFORMATICA-1.jpg");
+}
+section{
+  display: inline-block;
+  margin: 50px;
+  padding:10px;
+}
+#b{
+  padding:50px;
+  position:absolute;
+
+}
+#b2{
+  padding:30px;
+  position:absolute;
+  padding-right: 275px;
+}
+p{
+  padding:75px;
+
+}
+#descargas{
+  margin:10px;
+  display: inline-block;
+  background:black;
+  color:white;
+  padding-right: 100px;
+  height: 250px;
+  border-radius: 5px 5px 5px 5px;
+  border-bottom:5px blue solid;
+  width:280px;
+}
+#descargas:hover{
+  transition-duration: 100ms;
+  height: 260px;
+}
+#info{
+  margin:10px;
+  display: inline-block;
+  background:black;
+  color:white;
+  padding-right: 100px;
+  height: 250px;
+  border-radius: 5px 5px 5px 5px;
+  border-bottom:5px blue solid;
+  width:280px;
+}
+#info:hover{
+  transition-duration: 100ms;
+  height: 260px;
+}
+#github{
+  margin:10px;
+  display: inline-block;
+  background:black;
+  color:white;
+  padding-right: 100px;
+  height: 250px;
+  border-radius: 5px 5px 5px 5px;
+  border-bottom:5px blue solid;
+  width:280px;
+}
+#github:hover{
+  transition-duration: 100ms;
+  height: 260px;
+}
+#license{
+  margin:10px;
+  display: inline-block;
+  background:black;
+  color:white;
+  padding-right: 100px;
+  padding-bottom: 100px;
+  height: 250px;
+  border-radius: 5px 5px 5px 5px;
+  border-bottom:5px blue solid;
+  width:280px;
+  overflow-y: scroll;
+  background-color:black;
+  margin-left: 100%;
+}
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: b;
+  outline: 1px solid slategrey;
+}
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  margin: 0;
+  margin-bottom: 40px;
+}
+footer {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  color: white;
+  border-top:blue 5px solid;
+}
+li{
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+#footer{
+  margin:10px;
+}
+#footer:hover{
+  transition-duration: 100ms;
+  color:blue;
+}
